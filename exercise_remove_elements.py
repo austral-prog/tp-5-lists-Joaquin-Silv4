@@ -1,4 +1,6 @@
 # Ejercicio 4: Remover elementos en posiciones específicas
+from importlib.resources.readers import remove_duplicates
+
 
 def remove_elements(lista):
     """
@@ -11,4 +13,15 @@ def remove_elements(lista):
     Returns:
         La lista después de remover los elementos indicados
     """
-    pass  # Reemplazar con tu implementación
+    if len(lista) >= 6:
+        del lista[5]
+
+    if len(lista) >= 5:
+        del lista[4]
+
+    if len(lista) >= 1:
+        del lista[0]
+
+    return lista
+
+print(remove_elements(['Audi', 'BMW', 'Porsche', 'Aston Martin']))
