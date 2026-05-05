@@ -12,7 +12,7 @@ def reverse_list(lista):
     """
 
     if not lista:
-        return None
+        return []
     return lista[::-1]
 
 print(reverse_list(['a', 'b', 'c', 'd']))
